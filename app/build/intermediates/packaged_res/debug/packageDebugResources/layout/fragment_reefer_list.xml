@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.fragments.ReeferListFragment">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY REEFERS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="12dp"/>
+
+    <!-- Строка поиска и сортировка -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Search container"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background"/>
+
+        <ImageButton
+            android:id="@+id/buttonSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Sort"/>
+    </LinearLayout>
+
+    <!-- Список -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerReefers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        tools:listitem="@layout/item_reefer"/>
+
+</LinearLayout>

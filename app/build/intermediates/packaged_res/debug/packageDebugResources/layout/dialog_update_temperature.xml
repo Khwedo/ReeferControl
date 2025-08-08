@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editSupplyTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Supply Temp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editReturnTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Return Temp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/editSetPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set Point"
+            android:inputType="numberDecimal" />
+    </LinearLayout>

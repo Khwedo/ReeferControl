@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_item_chat_message.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/item_chat_message.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/navigation_nav_graph.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_item_alarm.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/item_alarm.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/anim_slide_out_left.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_item_spare_part_stock.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/item_spare_part_stock.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_spare_part_stock_list.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_spare_part_stock_list.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/anim_slide_out_right.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/xml_backup_rules.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_item_reefer.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/item_reefer.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/drawable_directions_boat.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/drawable/directions_boat.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_reefer_detail.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_reefer_detail.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_login.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_malfunction_report_list.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_malfunction_report_list.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_splash.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_spare_part_stock_detail.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_spare_part_stock_detail.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_dialog_add_alarm.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/dialog_add_alarm.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/drawable_ic_logo.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/drawable/ic_logo.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/anim_slide_in_right.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_reefer_list.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_reefer_list.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_item_malfunction_report.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/item_malfunction_report.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/xml_data_extraction_rules.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_activity_main.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_malfunction_report_detail.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_malfunction_report_detail.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_malfunction_report.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_malfunction_report.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_dialog_update_temperature.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/dialog_update_temperature.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/layout_fragment_settings.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.oceanbyte.reefercontrol.app-debug-50:/anim_slide_in_left.xml.flat",
+        "source": "com.oceanbyte.reefercontrol.app-main-52:/anim/slide_in_left.xml"
+    }
+]

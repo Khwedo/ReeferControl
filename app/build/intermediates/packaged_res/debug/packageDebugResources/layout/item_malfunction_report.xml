@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="6dp"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textReportNumber"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Report: MR-2025-001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textContainerNumber"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Container: TLLU9988776"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textPosition"
+            android:text="Position: 501882"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:text="Status: Open"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:text="Created: 2025-08-02"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
