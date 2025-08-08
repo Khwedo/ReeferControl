@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Malfunction Report"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alarm (авто)"
+            android:enabled="false"
+            android:focusable="false"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:layout_marginTop="12dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Before Repair"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTempBefore"
+            android:hint="Temperature (°C)" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editPressureBefore"
+            android:hint="Pressure (bar)" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editHumidityBefore"
+            android:hint="Humidity (%)" />
+
+        <!-- Параметры после -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="After Repair"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTempAfter"
+            android:hint="Temperature (°C)" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editPressureAfter"
+            android:hint="Pressure (bar)" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editHumidityAfter"
+            android:hint="Humidity (%)" />
+
+        <!-- Запчасти и примечания -->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSpareParts"
+            android:hint="Spare parts used"
+            android:layout_marginTop="16dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNotes"
+            android:hint="Notes" />
+
+        <!-- Экспорт -->
+        <CheckBox
+            android:id="@+id/checkExport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export to final report"
+            android:layout_marginTop="8dp" />
+
+        <!-- Кнопка -->
+        <Button
+            android:id="@+id/buttonSaveReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Report"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/reeferListFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.ReeferListFragment"
+        android:label="My Reefers"
+        tools:layout="@layout/fragment_reefer_list">
+        <action
+            android:id="@+id/action_reeferList_to_reeferDetail"
+            app:destination="@id/reeferDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/reeferDetailFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.ReeferDetailFragment"
+        android:label="Reefer Detail"
+        tools:layout="@layout/fragment_reefer_detail">
+        <action
+            android:id="@+id/action_reeferDetailFragment_to_malfunctionReportDetailFragment"
+            app:destination="@id/malfunctionReportDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_reeferDetail_to_malfunctionReport"
+            app:destination="@id/malfunctionReportFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_login_to_reeferList"
+            app:destination="@id/reeferListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
+
+        <action
+            android:id="@+id/action_settings_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splash_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_splash_to_reeferList"
+            app:destination="@id/reeferListFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_splashFragment_to_malfunctionReportListFragment"
+            app:destination="@id/malfunctionReportListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/malfunctionReportFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.MalfunctionReportFragment"
+        android:label="Malfunction Report"
+        tools:layout="@layout/fragment_malfunction_report">
+        <argument
+            android:name="containerNumber"
+            app:argType="string"
+            android:defaultValue="" />
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/malfunctionReportListFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.MalfunctionReportListFragment"
+        android:label="Report List"
+        tools:layout="@layout/fragment_malfunction_report_list">
+        <action
+            android:id="@+id/action_malfunctionReportList_to_reportDetail"
+            app:destination="@id/malfunctionReportDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/malfunctionReportDetailFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.MalfunctionReportDetailFragment"
+        android:label="Report Details"
+        tools:layout="@layout/fragment_malfunction_report_detail"
+        >
+        <argument
+            android:name="reportId"
+            app:argType="long"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/sparePartStockListFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.SparePartStockListFragment"
+        android:label="Spare Part List"
+        tools:layout="@layout/fragment_spare_part_stock_list">
+        <action
+            android:id="@+id/action_sparePartStockListFragment_to_sparePartStockDetailFragment"
+            app:destination="@id/sparePartStockDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/sparePartStockDetailFragment"
+        android:name="com.oceanbyte.reefercontrol.ui.fragments.SparePartStockDetailFragment"
+        android:label="Spare Part Detail"
+        tools:layout="@layout/fragment_spare_part_stock_detail">
+        <argument
+            android:name="partId"
+            app:argType="long" />
+    </fragment>
+
+    <!-- Пример перехода из списка -->
+
+
+
+</navigation>

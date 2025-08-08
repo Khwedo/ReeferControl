@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Container Number -->
+        <TextView
+            android:id="@+id/textContainerNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MSBU5287981"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/textPosition"
+            app:layout_constraintHorizontal_weight="1"/>
+
+        <!-- Position -->
+        <TextView
+            android:id="@+id/textPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pos: 501882"
+            android:textSize="14sp"
+            android:textColor="#666"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textContainerNumber"/>
+
+        <!-- Loading Port -->
+        <TextView
+            android:id="@+id/textLoadingPort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loading: Tokyo"
+            app:layout_constraintTop_toBottomOf="@id/textContainerNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iconShip"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Discharge Port -->
+        <TextView
+            android:id="@+id/textDischargePort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Discharge: New York"
+            app:layout_constraintTop_toBottomOf="@id/textContainerNumber"
+            app:layout_constraintStart_toEndOf="@id/iconShip"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Icon Ship (status color) -->
+        <ImageView
+            android:id="@+id/iconShip"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/directions_boat"
+        android:tint="@android:color/holo_green_dark"
+        app:layout_constraintTop_toBottomOf="@id/textContainerNumber"
+        app:layout_constraintStart_toEndOf="@id/textLoadingPort"
+        app:layout_constraintEnd_toStartOf="@id/textDischargePort"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="4dp"/>
+
+        <!-- ATD -->
+        <TextView
+            android:id="@+id/textAtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATD: Feb 08"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/textLoadingPort"
+            app:layout_constraintStart_toStartOf="@id/textLoadingPort"
+            android:layout_marginTop="4dp"/>
+
+        <!-- ETA -->
+        <TextView
+            android:id="@+id/textEta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ETA: Mar 27"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/textDischargePort"
+            app:layout_constraintStart_toStartOf="@id/textDischargePort"
+            android:layout_marginTop="4dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

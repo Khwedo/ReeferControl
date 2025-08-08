@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:padding="16dp"
+    android:background="#F3F3F3">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <!-- Container Number -->
+        <TextView
+            android:id="@+id/textContainerNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Container: MSBU5287981"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Position -->
+        <TextView
+            android:id="@+id/textPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Position: 501882"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Loading Port & ATD -->
+        <TextView
+            android:id="@+id/textLoadingPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading Port: Tokyo"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textATD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ATD: Feb 08"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Discharge Port & ETA -->
+        <TextView
+            android:id="@+id/textDischargePort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discharge Port: New York"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textETA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ETA: Mar 27"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textSupplyTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supply: -0.5°C"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textReturnTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return: 0.2°C"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textSetPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Point: -1.0°C"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonUpdateTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Temperature" />
+
+        <TextView
+            android:id="@+id/textLastUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last update: —"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active Alarms"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewNoAlarms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No alarms"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAlarms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            />
+
+        <Button
+            android:id="@+id/buttonAddAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Alarm"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <!-- Список репортов-->
+
+        <TextView
+            android:id="@+id/textReportsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repair Reports"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/reportContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <!--Чат-->
+        <TextView
+            android:id="@+id/textViewChatTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Чат"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewChat"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/editTextChatMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Введите сообщение" />
+
+            <Button
+                android:id="@+id/buttonSendChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отправить" />
+        </LinearLayout>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: NORMAL"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
